@@ -1,0 +1,95 @@
+.node {
+    width: 25.15px;
+    height: 25px;
+    outline: 1px solid rgb(72, 61, 139);
+    display: inline-block;
+    margin: 0;
+}
+
+
+.finish {
+    /*background-image: url("../../flower.png");*/
+    background-image: url("https://www.pngarts.com/files/2/Left-Arrow-PNG-Free-Download.png");
+    transform: rotate(180deg);
+    background-size: cover;
+    z-index: 5;
+
+}
+
+.start {
+    background-image: url("https://www.pngarts.com/files/2/Left-Arrow-PNG-Free-Download.png");
+    z-index: 2;
+    transform: rotate(180deg);
+    background-size: cover;
+    /*animation: rotate 2s infinite;*/
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+.visited{
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    /*animation-delay: 0;*/
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+
+@keyframes visitedAnimation {
+    0% {
+        transform: scale(0.3);
+        background-color: rgba(0, 0, 66, 0.75);
+        border-radius: 100%;
+    }
+
+    50% {
+        background-color: rgba(17, 104, 217, 0.75);
+    }
+
+    75% {
+        transform: scale(1.2);
+        background-color: rgba(0, 217, 159, 0.75);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: rgb(0, 116, 217);;
+    }
+}
+
+.shortestPath {
+    animation-name: shortestPath;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    outline: none;
+}
+
+@keyframes shortestPath {
+    0% {
+        transform: scale(0.6);
+        background-color: rgb(255, 254, 106);
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: rgb(255, 254, 106);
+    }
+
+    100% {
+        transform: scale(1);
+        background-color: rgb(255, 254, 106);
+    }
+}

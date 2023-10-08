@@ -1,0 +1,32 @@
+.array-container{
+    text-align: center;
+    margin: auto;
+}
+.array-bars{
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align:top;
+    background-color: #0074D9;
+    border-bottom: 1px solid;
+    border: 1px solid;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 5px;
+}
+.array-bars:hover{
+    box-shadow: -1px 1px black;
+    background-color: black;
+}
+
+.slider{
+    position: absolute;
+    margin-top: 8px;
+    width: 200px;
+    margin : 30px;
+    /*-webkit-appearance: none;*/
+}
+.footer{
+    background-color: #483d8b;
+    height: 20vh;
+    width: 100%;
+}
